@@ -15,8 +15,8 @@ Requirements:
 python -m venv .venv
 
 source .venv/bin/activate       # Linux
-# .venv\Scripts\activate        # Windows + Powershell
-# source .venv/Scipts/activate  # Windows + Gitbash
+.venv\Scripts\activate          # Windows + Powershell
+source .venv/Scipts/activate    # Windows + Gitbash
 
 pip install -r requirements.txt
 python main.py
