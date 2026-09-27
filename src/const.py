@@ -1,9 +1,10 @@
 SCREEN_WIDTH: int = 800
-SCREEN_HEIGHT: int = 320
+SCREEN_HEIGHT: int = 640
 FPS: float = 60.0
 GAMEOVER_PAUSE_INTERVAL_MS: int = 2000
 DELTA_TIME_MIN: float = 0.01  # on very high FPS, enemies do not move
 PLAYER_SPEED: float = 200.0
 ENEMY_MIN_SPEED: float = 50.0
 ENEMY_MAX_SPEED: float = 200.0
-ENEMY_SPAWN_INTERVAL_MS: int = 400
+ENEMY_SPAWN_INTERVAL_MS: int = 300
+EASIER_SUPERPOS: bool = False  # easier to see superpos state

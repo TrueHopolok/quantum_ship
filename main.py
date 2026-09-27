@@ -2,7 +2,6 @@ import pygame
 
 pygame.init()
 
-import random
 import src.game as game
 from pygame.locals import (
     K_ESCAPE,
