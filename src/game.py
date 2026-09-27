@@ -4,6 +4,7 @@ import src.player as player
 import src.enemies as enemies
 import src.superpos as superpos
 import src.const as const
+import src.interfierence as noise
 from typing import List
 from src.const import (
     SCREEN_WIDTH,
@@ -77,6 +78,7 @@ def update(
             observed_active = False
     enemies.update(pygame.key.get_pressed(), delta_time)
     player.update(pygame.key.get_pressed(), event_queue, delta_time)
+    noise.update()
     observe(screen)
     pygame.draw.line(
         screen, (0, 0, 255), (0, SCREEN_HEIGHT // 2), (SCREEN_WIDTH, SCREEN_HEIGHT // 2)
