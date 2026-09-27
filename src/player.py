@@ -18,7 +18,7 @@ from src.const import (
     SCREEN_WIDTH,
     SCREEN_HEIGHT,
     PLAYER_SPEED,
-    EASIER_SUPERPOS,
+    CHEAT_EASY_SUPERPOS,
 )
 
 
@@ -54,7 +54,7 @@ def update(
                         sprite.rect.top
                         + (-SCREEN_HEIGHT // 2 if inverted else SCREEN_HEIGHT // 2),
                     )
-                    if EASIER_SUPERPOS:
+                    if CHEAT_EASY_SUPERPOS:
                         twin.surf.fill((0, 170, 170))
                     game.all_sprites.add(twin)
                 split = not split
